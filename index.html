@@ -1,0 +1,19 @@
+
+<p>basic bit translator</p>
+<input type="number" id="in"/>
+<button onClick="normal()">click me to figure out then next number in the collatz conjecture!</button>
+<p id="out"></p>
+<script>
+	let x = document.getElementById("in")
+	let z = x.value
+	let y = document.getElementById("out")
+	function normal() {
+		z = x.value
+		if (z % 2 = 0) {
+			z = z/2
+		} else {
+			z = z*3-1
+		}
+		y.innerHTML = z
+	}
+</script>
